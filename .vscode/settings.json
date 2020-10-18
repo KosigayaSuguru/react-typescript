@@ -1,0 +1,25 @@
+{
+    "files.eol": "\n",
+    "[javascript]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+    },
+    "[typescript]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+    },
+    "[typescriptreact]": {
+        "editor.detectIndentation": false, // インデント幅を変えるのにココをfalseにしないと個別設定が効かないので注意
+        "editor.tabSize": 2, // editor.detectIndentation": false にしないと無視される
+        "editor.insertSpaces": true, // editor.detectIndentation": false にしないと無視される
+        "editor.formatOnSave": true,
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true,
+    }
+}
