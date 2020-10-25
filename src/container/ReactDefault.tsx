@@ -1,9 +1,14 @@
 import 'App.css';
 import { MyComponent } from 'components/component';
 import logo from 'logo.svg';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export function ReactDefault() {
+
+  useEffect(() => {
+    document.title = 'ReactDefault';
+  });
+
   return (
     <div className="App">
       <header className="App-header">

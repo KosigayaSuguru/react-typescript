@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
 export const BootstrapTest: React.FC = () => {
   const [validated, setValidated] = useState(false);
   const [firstName, setFirstName] = useState<string>('firstName');
+
+  useEffect(() => {
+    document.title = 'BootstrapTest';
+  });
 
   const handleSubmit = (event: React.MouseEvent<HTMLFormElement>) => {
     const form = event.currentTarget;
