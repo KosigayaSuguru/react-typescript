@@ -1,5 +1,6 @@
 import { AxiosRequestConfig } from 'axios';
 import React, { useEffect, useState } from 'react';
+import Button from 'react-bootstrap/Button';
 import { request } from 'util/request';
 
 type Props = {
@@ -51,12 +52,12 @@ export const MyComponent: React.FC<Props> = (props) => {
 
   return (
     <>
+      <Button variant="danger">僕ドラえもん</Button>
       {reloadButton}
       <span>{isLoading ? 'Loading' : 'Loaded'}</span>
       <span>{`props.foo=${props.foo}`}</span>
       <br />
       <span>{data}</span>
-
     </>
   );
 };

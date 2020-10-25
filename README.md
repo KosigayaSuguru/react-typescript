@@ -8,3 +8,7 @@ ESLint
 yarn add eslint-plugin-react-hooks ---dev
 ```
 
+## package.jsonメモ
+
+typescriptは3.8以上にしないと、react-bootstrapでエラーがでる。  
+bootstrapはcss取り込み用。  
