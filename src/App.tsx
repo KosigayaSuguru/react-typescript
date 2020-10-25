@@ -1,3 +1,4 @@
+import { BootstrapTest } from 'container/BootstrapTest';
 import { ReactDefault } from 'container/ReactDefault';
 import React from 'react';
 import {
@@ -9,7 +10,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/"><ReactDefault /></Route>
+        <Route exact path="/"><ReactDefault />
+        </Route>
+        <Route exact path="/bootstrap"><BootstrapTest />
+        </Route>
       </Switch>
     </Router>
   );
